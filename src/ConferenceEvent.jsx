@@ -94,7 +94,6 @@ const ConferenceEvent = () => {
                         <div className="items-information">
                             <div id="venue" className="venue_container container_main">
                                 <div className="text">
-
                                     <h1>Venue Room Selection</h1>
                                 </div>
                                 <div className="venue_selection">
@@ -107,7 +106,6 @@ const ConferenceEvent = () => {
                                             <div>${item.cost}</div>
                                             <div className="button_container">
                                                 {venueItems[index].name === "Auditorium Hall (Capacity:200)" ? (
-
                                                     <>
                                                         <button
                                                             className={venueItems[index].quantity === 0 ? "btn-warning btn-disabled" : "btn-minus btn-warning"}
@@ -142,8 +140,6 @@ const ConferenceEvent = () => {
                                                         >
                                                             &#43;
                                                         </button>
-
-
                                                     </div>
                                                 )}
                                             </div>
@@ -155,38 +151,24 @@ const ConferenceEvent = () => {
 
                             {/*Necessary Add-ons*/}
                             <div id="addons" className="venue_container container_main">
-
-
                                 <div className="text">
-
                                     <h1> Add-ons Selection</h1>
-
                                 </div>
                                 <div className="addons_selection">
-
                                 </div>
                                 <div className="total_cost">Total Cost:</div>
-
                             </div>
 
                             {/* Meal Section */}
-
                             <div id="meals" className="venue_container container_main">
-
                                 <div className="text">
-
                                     <h1>Meals Selection</h1>
                                 </div>
-
                                 <div className="input-container venue_selection">
-
                                 </div>
                                 <div className="meal_selection">
-
                                 </div>
-                                <div className="total_cost">Total Cost: </div>
-
-
+                                <div className="total_cost">Total Cost: ${venueTotalCost}</div>
                             </div>
                         </div>
                     ) : (
@@ -195,13 +177,8 @@ const ConferenceEvent = () => {
                         </div>
                     )
                 }
-
-
-
-
             </div>
         </>
-
     );
 };
 
